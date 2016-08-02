@@ -146,6 +146,7 @@
 				TargetAttributes = {
 					BE14E3521D4F828600056C9C = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = GEALDJ8ZRV;
 					};
 					BE14E3661D4F828600056C9C = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -329,8 +330,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FoodTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-ObjC",
+					"-framework",
+					CFNetwork,
+					"-force_load",
+					"\"$(SOURCE_ROOT)/calabash.framework/calabash\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = uk.me.paulswilliams.FoodTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -340,6 +349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FoodTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.me.paulswilliams.FoodTracker;
