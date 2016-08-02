@@ -7,5 +7,7 @@ dependencies:
         - sudo bundle install 
 
 test:
+    pre:
+        - open -b com.apple.iphonesimulator
     post:
         - cucumber
