@@ -3,7 +3,7 @@ machine:
     version: 7.3.1
 
 dependencies:
-    kpre:
+    pre:
         xcrun instruments -w 'A70FE3C7-756F-44BF-BE46-68663FAE2EE3' || true
     override:
         - bundle install 
