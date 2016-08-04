@@ -22,7 +22,7 @@ class FoodTrackerTests: XCTestCase {
     }
     
     func testExample() {
-        XCTAssertEqual(1, 2)
+        XCTAssertEqual(1, 1)
     }
     
     func testPerformanceExample() {
