@@ -4,7 +4,7 @@ machine:
 
 dependencies:
     pre:
-        xcrun instruments -w 'A70FE3C7-756F-44BF-BE46-68663FAE2EE3' || true
+        - xcrun instruments -w 'A70FE3C7-756F-44BF-BE46-68663FAE2EE3' || true
     override:
         - bundle install 
 
