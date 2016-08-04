@@ -1,10 +1,13 @@
 machine:
+    xcode:
+    version: 7.3.1
+
 dependencies:
+    kpre:
+        xcrun instruments -w 'A70FE3C7-756F-44BF-BE46-68663FAE2EE3' || true
     override:
         - bundle install 
 
 test:
-    pre:
-        - open -b com.apple.iphonesimulator
     post:
         - cucumber
