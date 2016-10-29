@@ -6,6 +6,7 @@ dependencies:
     pre:
         - xcrun simctl list
         - xcrun instruments -w 'A70FE3C7-756F-44BF-BE46-68663FAE2EE3' || true
+        - sleep 15
 
     override:
         - bundle install 
